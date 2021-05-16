@@ -1,0 +1,47 @@
+</section>
+
+
+    <!-- contact ends -->
+
+    <footer
+        style="font-size: x-large; text-decoration: none; width: auto; text-align: center; background-color:#17a2b8; opacity: 0.8;">
+        <a href="#" class="f">#CovidFreeIndia</a>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+
+            $(document).click(function (event) {
+                var click = $(event.target);
+                var _open = $(".navbar-collapse").hasClass("show");
+                if (_open === true && !click.hasClass("navbar-toggler")) {
+                    $(".navbar-toggler").click();
+                }
+            });
+
+        });
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
