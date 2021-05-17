@@ -1,0 +1,16 @@
+{
+    "data":[
+        {
+    "state": "bihar",
+    "district":[
+        "b1","b2"
+    ]
+     },
+     {
+        "state": "up",
+        "district":[
+            "u1","u2"
+        ]
+         }
+
+]}

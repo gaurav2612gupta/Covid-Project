@@ -1,3 +1,46 @@
 <%- include("partials/header") -%>
 
+<div class="container">
+<form action="./search.ejs" method="post">
+    <label for="">states</label>
+<select name="states" id="st">
+    <option value="" id="stl">select a state </option>
+</select>
+<label for="">districts</label>
+<select name="districts" id="dsrt">
+    <option value="" id="dsrtl">select a district</option>
+</select>
+</form>
+
+</div>
+
+<script>
+ 
+    $(document).ready(function(){
+          var s="";
+             $.getJSON("test.json", function(result){
+              // console.log("ready");
+               //console.log("this");
+                $.each(result.data, function(i, field){
+                    console.log(this.state);
+                   // console.log("this");
+                    $("#st").append('<option >'+ this.state+'</option>');
+                    
+
+    });
+    
+  });
+
+  $("#st").change(function(){
+        var a=$("#stl").attr("name");
+        console.log(a);
+        alert($("#stl").attr("name"))
+  })
+
+    })
+
+
+
+</script>
+
 <%- include("partials/footer") -%>
