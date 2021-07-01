@@ -1,0 +1,47 @@
+<div class="requirements">
+    <% post.forEach(function(post){ %>
+        <span><%= post.User%> of <%= post.State%> require___ </span>
+        <% }); %>
+</div>
+
+
+
+<div class="req" style="float: right;">
+    <form class="float-child"  action="/register_req" method="get">
+        <div >
+            <input class="rb" type="submit" value="REGISTER your Requirements" onChange="this.form.submit()"  ></div>
+       </form>
+</div>
+
+
+<div class="card card-box">
+    <div class="requirements">
+        <% post.forEach(function(post){ %>
+            <span><%= post.User%> of <%= post.State%> require___ </span>
+            <% }); %>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque atque, minus rem quam itaque tempora sed! Sed commodi, ad nulla impedit non cumque sapiente? Nemo assumenda expedita quia ipsa ullam?
+    </div>
+</div>
+
+<div class="donate">
+    <h1 class="h1">WANT TO DONATE PLASMA?</h1>
+    <h2 class="h2">If you are recovered COVID patient and willing to Donate</h2>
+    <form class="float-child"  action="/register" method="get">
+        <div >
+            <input class="bd" type="submit" value="REGISTER TO DONATE" onChange="this.form.submit()"  ></div>
+       </form>
+</div>
+<div class="need">
+    <h1 class="h1">LOOKING FOR A PLASMA DONOR?</h1>
+    <h2 class="h2">If you are looking for a Plasma donor, Register here 
+        
+    </h2>
+    <form class="float-child"  action="/search" method="get">
+        <div >
+            <input class="bl" type="submit" value="SEARCH" onChange="this.form.submit()"  ></div>
+       </form>
+</div>
+
+
+
+<input type="submit" action="/register" method="get" style="color: rgb(255, 56, 56); text-align: left;"><%= i%> : <%= posts.User%> of <%= posts.State%> require___ </input>

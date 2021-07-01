@@ -20,7 +20,8 @@ const postSchema = new Schema ({
     },
 
     BloodGr:{
-         e: String
+         type: String,
+         required: true
     },
     
     

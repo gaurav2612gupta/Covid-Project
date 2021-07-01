@@ -1,0 +1,150 @@
+/* body{
+    background-color: #ffff79;
+} */
+.home{
+    margin-bottom: 300px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 30px;
+}
+
+.heading{
+    margin-top: 120px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    width: 100%;
+    text-align: center;
+    padding-left: 10px;
+    margin-bottom: 100px;
+}
+
+.card-box{
+    width: auto;
+    border: none;
+    background-color: #ffffd1;
+    opacity: 0.9;
+    border-radius: 20px;
+    font-size: 40px;
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+}
+.h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+.h2{
+    font-size: 20px;
+}
+
+.card-button{
+    border: 3px solid orangered;
+    border-radius: 5px;
+    color: orangered;
+    margin: 3px;
+    font-weight: 600;
+    font-size: 25px;
+    padding: 0 10px;
+    width: auto;
+    margin-top: 20px;
+}
+
+.card-button:hover{
+    background-color: #ffa399;
+}
+
+/* isse upar tak ka change hai */
+
+#plasma{
+    color: #ffcc66;
+    font-weight: bold;
+}
+#help{
+    color: red;
+    font-weight: bold;
+}
+.navbar-brand:hover{
+    text-shadow: 0 0 4px #FF0000;
+}
+.nav-link{
+    margin: 5px;
+}
+.l1{
+    font-size: 4.8em;
+    margin-bottom: 20px;
+}
+
+.l5{
+    font-size: 1.6em;
+}
+.f{
+    text-decoration: none;
+    color: white;
+}
+.f:hover{
+    text-decoration: none;
+    color: aquamarine;
+}
+.picture{
+    width: 70%;
+    margin-left: 70px;
+}
+#test{
+    color: transparent;
+    clear: both;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#test1{
+    color: transparent;
+    margin-bottom: 50px;
+}
+#test2{
+    color: transparent;
+    margin-bottom: 50px;
+}
+.how-heading{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.how-icon{
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffaa65;
+}
+.how-title{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #ff7364;
+}
+.how-details{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.contact-heading{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.pre-heading{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.card-text{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.ul1{
+    margin-left: 50%;
+}

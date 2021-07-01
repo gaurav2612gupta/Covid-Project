@@ -5,25 +5,67 @@
     <h1 class="l1">INDIA NEEDS YOUR HELP</h1>
     <h2 class="l5">ONE Unit of Your PLASMA can Save upto THREE Lives</h2>
 </div>
-<div class="donate">
-    <h1 class="h1">WANT TO DONATE PLASMA?</h1>
-    <h2 class="h2">If you are recovered COVID patient and willing to Donate</h2>
-    <form class="float-child"  action="/register" method="get">
-        <div >
-            <input class="bd" type="submit" value="REGISTER TO DONATE" onChange="this.form.submit()"  ></div>
-       </form>
-</div>
-<div class="need">
-    <h1 class="h1">LOOKING FOR A PLASMA DONOR?</h1>
-    <h2 class="h2">If you are looking for a Plasma donor, Register here 
-        
-    </h2>
-    <form class="float-child"  action="/search" method="get">
-        <div >
-            <input class="bl" type="submit" value="SEARCH" onChange="this.form.submit()"  ></div>
-       </form>
-</div>
+
+<div class="row">
+    <div class="col-sm-4" id="c1" >
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">HELP!!!</h5>
+            <h5 class="h">Following people want to help:</h5><br>
+            
+            <% var i=1;%>
+            <%post.forEach(function(posts){ %>
+                <% var UserName  = posts.User;%>
+                <% if(posts==0){ console.log(post);%>
+                    <ul><li style="color: rgb(56, 255, 73); text-align: center; ">No posts yet </li></ul>
+                <% }else if(posts!=0){%>
+                <div >
+                   
+                    <form action="/view/detail.ejs" method="post">
+                    <input onclick="this.form.submit()" style="float: left; width: 100%;background-color:rgba(153, 241, 241, 0.836);border: 2px red solid; margin-top:3px; font-weight: 200; justify-content:center;"><%=i%>: <%= posts.User%> want to donate <%=posts.BloodGr%> 
+                    <ul>
+                        <li value="<%= posts.User%>"></li>
+                        <li value="<%= posts.State%>"></li>
+                        <li value="<%= posts.BloodGr%>"></li>
+                    </ul>
+                </input>
+                </form>
+                
+                </div>
+                <% i++;}}); %>
+            
+            <p class="card-text"></p>
+            
+          </div>
+        </div>
+      </div>
+    <div class="col-sm-4" id="c2">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">WANT TO DONATE?</h5>
+            <p class="card-text">If you are recovered COVID patient and willing to Donate</p><br>
+            <form class="float-child"  action="/register" method="get">
+                <div >
+                    <input class="bd" type="submit" value="REGISTER" onChange="this.form.submit()"  ></div>
+               </form>
+          </div>
+        </div>
+      </div><div class=" col-sm-4 " id="c3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">LOOKING FOR A DONOR?</h5>
+          <p class="card-text">If you are looking for a donor then "SEARCH" here</p>
+          <form class="float-child"  action="/search" method="get">
+            <div >
+                <input class="bl" type="submit" value="SEARCH" onChange="this.form.submit()"  ></div>
+           </form>
+        </div>
+      </div>
+    </div>
+    
+   </div>
 </section>
+
 
 <div id="test">.</div>
 
