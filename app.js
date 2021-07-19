@@ -3,6 +3,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 const adminRoutes = require('./routes/admin')
 
+const PORT = process.env.PORT || 3000;
+
 const app = express();
 
 console.log('hello');
@@ -21,7 +23,7 @@ app.use(express.json());
 app.set('view engine', 'ejs');
 app.use(adminRoutes);
 
-app.listen(3000, function() {
+app.listen(PORT, function() {
     console.log("Server started on port 3000");
 });
   
